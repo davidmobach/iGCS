@@ -1,0 +1,312 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		63FA5DC813DEF1860061D8DC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63FA5DC713DEF1860061D8DC /* UIKit.framework */; };
+		63FA5DCA13DEF1860061D8DC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63FA5DC913DEF1860061D8DC /* Foundation.framework */; };
+		63FA5DCC13DEF1860061D8DC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63FA5DCB13DEF1860061D8DC /* CoreGraphics.framework */; };
+		63FA5DD213DEF1860061D8DC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 63FA5DD013DEF1860061D8DC /* InfoPlist.strings */; };
+		63FA5DD413DEF1860061D8DC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FA5DD313DEF1860061D8DC /* main.m */; };
+		63FA5DD813DEF1860061D8DC /* iGCSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FA5DD713DEF1860061D8DC /* iGCSAppDelegate.m */; };
+		63FA5DDC13DEF1860061D8DC /* iGCSAppDelegate_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FA5DDB13DEF1860061D8DC /* iGCSAppDelegate_iPhone.m */; };
+		63FA5DDF13DEF1860061D8DC /* MainWindow_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63FA5DDD13DEF1860061D8DC /* MainWindow_iPhone.xib */; };
+		63FA5DE313DEF1860061D8DC /* iGCSAppDelegate_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FA5DE213DEF1860061D8DC /* iGCSAppDelegate_iPad.m */; };
+		63FA5DE613DEF1860061D8DC /* MainWindow_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63FA5DE413DEF1860061D8DC /* MainWindow_iPad.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		63FA5DC313DEF1860061D8DC /* iGCS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iGCS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		63FA5DC713DEF1860061D8DC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		63FA5DC913DEF1860061D8DC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		63FA5DCB13DEF1860061D8DC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		63FA5DCF13DEF1860061D8DC /* iGCS-Info.plist */ = {isa = PBXFileReference; path = "iGCS-Info.plist"; sourceTree = "<group>"; };
+		63FA5DD113DEF1860061D8DC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		63FA5DD313DEF1860061D8DC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		63FA5DD513DEF1860061D8DC /* iGCS-Prefix.pch */ = {isa = PBXFileReference; path = "iGCS-Prefix.pch"; sourceTree = "<group>"; };
+		63FA5DD613DEF1860061D8DC /* iGCSAppDelegate.h */ = {isa = PBXFileReference; path = iGCSAppDelegate.h; sourceTree = "<group>"; };
+		63FA5DD713DEF1860061D8DC /* iGCSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iGCSAppDelegate.m; sourceTree = "<group>"; };
+		63FA5DDA13DEF1860061D8DC /* iGCSAppDelegate_iPhone.h */ = {isa = PBXFileReference; name = iGCSAppDelegate_iPhone.h; path = iPhone/iGCSAppDelegate_iPhone.h; sourceTree = "<group>"; };
+		63FA5DDB13DEF1860061D8DC /* iGCSAppDelegate_iPhone.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = iGCSAppDelegate_iPhone.m; path = iPhone/iGCSAppDelegate_iPhone.m; sourceTree = "<group>"; };
+		63FA5DDE13DEF1860061D8DC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPhone/en.lproj/MainWindow_iPhone.xib; sourceTree = "<group>"; };
+		63FA5DE113DEF1860061D8DC /* iGCSAppDelegate_iPad.h */ = {isa = PBXFileReference; name = iGCSAppDelegate_iPad.h; path = iPad/iGCSAppDelegate_iPad.h; sourceTree = "<group>"; };
+		63FA5DE213DEF1860061D8DC /* iGCSAppDelegate_iPad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = iGCSAppDelegate_iPad.m; path = iPad/iGCSAppDelegate_iPad.m; sourceTree = "<group>"; };
+		63FA5DE513DEF1860061D8DC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPad/en.lproj/MainWindow_iPad.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		63FA5DC013DEF1860061D8DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63FA5DC813DEF1860061D8DC /* UIKit.framework in Frameworks */,
+				63FA5DCA13DEF1860061D8DC /* Foundation.framework in Frameworks */,
+				63FA5DCC13DEF1860061D8DC /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		63FA5DB813DEF1860061D8DC = {
+			isa = PBXGroup;
+			children = (
+				63FA5DCD13DEF1860061D8DC /* iGCS */,
+				63FA5DC613DEF1860061D8DC /* Frameworks */,
+				63FA5DC413DEF1860061D8DC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		63FA5DC413DEF1860061D8DC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				63FA5DC313DEF1860061D8DC /* iGCS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		63FA5DC613DEF1860061D8DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				63FA5DC713DEF1860061D8DC /* UIKit.framework */,
+				63FA5DC913DEF1860061D8DC /* Foundation.framework */,
+				63FA5DCB13DEF1860061D8DC /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		63FA5DCD13DEF1860061D8DC /* iGCS */ = {
+			isa = PBXGroup;
+			children = (
+				63FA5DD613DEF1860061D8DC /* iGCSAppDelegate.h */,
+				63FA5DD713DEF1860061D8DC /* iGCSAppDelegate.m */,
+				63FA5DD913DEF1860061D8DC /* iPhone */,
+				63FA5DE013DEF1860061D8DC /* iPad */,
+				63FA5DCE13DEF1860061D8DC /* Supporting Files */,
+			);
+			path = iGCS;
+			sourceTree = "<group>";
+		};
+		63FA5DCE13DEF1860061D8DC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				63FA5DCF13DEF1860061D8DC /* iGCS-Info.plist */,
+				63FA5DD013DEF1860061D8DC /* InfoPlist.strings */,
+				63FA5DD313DEF1860061D8DC /* main.m */,
+				63FA5DD513DEF1860061D8DC /* iGCS-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		63FA5DD913DEF1860061D8DC /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				63FA5DDA13DEF1860061D8DC /* iGCSAppDelegate_iPhone.h */,
+				63FA5DDB13DEF1860061D8DC /* iGCSAppDelegate_iPhone.m */,
+				63FA5DDD13DEF1860061D8DC /* MainWindow_iPhone.xib */,
+			);
+			name = iPhone;
+			sourceTree = "<group>";
+		};
+		63FA5DE013DEF1860061D8DC /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				63FA5DE113DEF1860061D8DC /* iGCSAppDelegate_iPad.h */,
+				63FA5DE213DEF1860061D8DC /* iGCSAppDelegate_iPad.m */,
+				63FA5DE413DEF1860061D8DC /* MainWindow_iPad.xib */,
+			);
+			name = iPad;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		63FA5DC213DEF1860061D8DC /* iGCS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63FA5DE913DEF1860061D8DC /* Build configuration list for PBXNativeTarget "iGCS" */;
+			buildPhases = (
+				63FA5DBF13DEF1860061D8DC /* Sources */,
+				63FA5DC013DEF1860061D8DC /* Frameworks */,
+				63FA5DC113DEF1860061D8DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iGCS;
+			productName = iGCS;
+			productReference = 63FA5DC313DEF1860061D8DC /* iGCS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		63FA5DBA13DEF1860061D8DC /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 63FA5DBD13DEF1860061D8DC /* Build configuration list for PBXProject "iGCS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 63FA5DB813DEF1860061D8DC;
+			productRefGroup = 63FA5DC413DEF1860061D8DC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				63FA5DC213DEF1860061D8DC /* iGCS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		63FA5DC113DEF1860061D8DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63FA5DD213DEF1860061D8DC /* InfoPlist.strings in Resources */,
+				63FA5DDF13DEF1860061D8DC /* MainWindow_iPhone.xib in Resources */,
+				63FA5DE613DEF1860061D8DC /* MainWindow_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		63FA5DBF13DEF1860061D8DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63FA5DD413DEF1860061D8DC /* main.m in Sources */,
+				63FA5DD813DEF1860061D8DC /* iGCSAppDelegate.m in Sources */,
+				63FA5DDC13DEF1860061D8DC /* iGCSAppDelegate_iPhone.m in Sources */,
+				63FA5DE313DEF1860061D8DC /* iGCSAppDelegate_iPad.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		63FA5DD013DEF1860061D8DC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63FA5DD113DEF1860061D8DC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		63FA5DDD13DEF1860061D8DC /* MainWindow_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63FA5DDE13DEF1860061D8DC /* en */,
+			);
+			name = MainWindow_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		63FA5DE413DEF1860061D8DC /* MainWindow_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63FA5DE513DEF1860061D8DC /* en */,
+			);
+			name = MainWindow_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		63FA5DE713DEF1860061D8DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		63FA5DE813DEF1860061D8DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		63FA5DEA13DEF1860061D8DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iGCS/iGCS-Prefix.pch";
+				INFOPLIST_FILE = "iGCS/iGCS-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		63FA5DEB13DEF1860061D8DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iGCS/iGCS-Prefix.pch";
+				INFOPLIST_FILE = "iGCS/iGCS-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		63FA5DBD13DEF1860061D8DC /* Build configuration list for PBXProject "iGCS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63FA5DE713DEF1860061D8DC /* Debug */,
+				63FA5DE813DEF1860061D8DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63FA5DE913DEF1860061D8DC /* Build configuration list for PBXNativeTarget "iGCS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63FA5DEA13DEF1860061D8DC /* Debug */,
+				63FA5DEB13DEF1860061D8DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 63FA5DBA13DEF1860061D8DC /* Project object */;
+}
