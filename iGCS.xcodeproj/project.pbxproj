@@ -17,6 +17,33 @@
 		63FA5DDF13DEF1860061D8DC /* MainWindow_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63FA5DDD13DEF1860061D8DC /* MainWindow_iPhone.xib */; };
 		63FA5DE313DEF1860061D8DC /* iGCSAppDelegate_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FA5DE213DEF1860061D8DC /* iGCSAppDelegate_iPad.m */; };
 		63FA5DE613DEF1860061D8DC /* MainWindow_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63FA5DE413DEF1860061D8DC /* MainWindow_iPad.xib */; };
+		63FA5DF313DEF8480061D8DC /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FA5DF113DEF8470061D8DC /* MapViewController.m */; };
+		63FA5DF413DEF8480061D8DC /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63FA5DF213DEF8470061D8DC /* MapViewController.xib */; };
+		63FA5DF613DF022F0061D8DC /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63FA5DF513DF022F0061D8DC /* MapKit.framework */; };
+		63FA5DF913DF02DE0061D8DC /* UAVMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FA5DF813DF02DE0061D8DC /* UAVMapAnnotation.m */; };
+		63FA5DFF13DF05B60061D8DC /* NSObject+DDExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FA5DFB13DF05B60061D8DC /* NSObject+DDExtensions.m */; };
+		63FA5E0013DF05B60061D8DC /* DDInvocationGrabber.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FA5DFD13DF05B60061D8DC /* DDInvocationGrabber.m */; };
+		63FA5E0313DF05D00061D8DC /* utils.c in Sources */ = {isa = PBXBuildFile; fileRef = 63FA5E0213DF05D00061D8DC /* utils.c */; };
+		63FA5E0D13DF06060061D8DC /* easystar.png in Resources */ = {isa = PBXBuildFile; fileRef = 63FA5E0513DF06060061D8DC /* easystar.png */; };
+		63FA5E0E13DF06060061D8DC /* batt_full.png in Resources */ = {isa = PBXBuildFile; fileRef = 63FA5E0613DF06060061D8DC /* batt_full.png */; };
+		63FA5E0F13DF06060061D8DC /* batt_medium.png in Resources */ = {isa = PBXBuildFile; fileRef = 63FA5E0713DF06060061D8DC /* batt_medium.png */; };
+		63FA5E1013DF06060061D8DC /* batt_low.png in Resources */ = {isa = PBXBuildFile; fileRef = 63FA5E0813DF06060061D8DC /* batt_low.png */; };
+		63FA5E1113DF06060061D8DC /* gameplan.png in Resources */ = {isa = PBXBuildFile; fileRef = 63FA5E0913DF06060061D8DC /* gameplan.png */; };
+		63FA5E1213DF06060061D8DC /* airplane.png in Resources */ = {isa = PBXBuildFile; fileRef = 63FA5E0A13DF06060061D8DC /* airplane.png */; };
+		63FA5E1313DF06060061D8DC /* dashboard.png in Resources */ = {isa = PBXBuildFile; fileRef = 63FA5E0B13DF06060061D8DC /* dashboard.png */; };
+		63FA5E1413DF06060061D8DC /* radar.png in Resources */ = {isa = PBXBuildFile; fileRef = 63FA5E0C13DF06060061D8DC /* radar.png */; };
+		63FA5E1B13DF108C0061D8DC /* libivy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 63FA5E1913DF108C0061D8DC /* libivy.a */; };
+		63FA5E1C13DF108C0061D8DC /* libpcre.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 63FA5E1A13DF108C0061D8DC /* libpcre.a */; };
+		63FA5E1E13DF13810061D8DC /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63FA5E1D13DF13810061D8DC /* CoreLocation.framework */; };
+		63FA5E2213DF252A0061D8DC /* StatusViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63FA5E1F13DF25290061D8DC /* StatusViewController.xib */; };
+		63FA5E2313DF252A0061D8DC /* StatusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FA5E2113DF25290061D8DC /* StatusViewController.m */; };
+		63FA5E2513DF27D60061D8DC /* easystar.png in Resources */ = {isa = PBXBuildFile; fileRef = 63FA5E2413DF27D60061D8DC /* easystar.png */; };
+		63FA5E2813DF2B950061D8DC /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FA5E2713DF2B950061D8DC /* MainViewController.m */; };
+		63FA5E5B13DF3DBD0061D8DC /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63FA5E5A13DF3DBD0061D8DC /* MainViewController.xib */; };
+		63FA5E6213DF45E20061D8DC /* IvyBus.m in Sources */ = {isa = PBXBuildFile; fileRef = 63FA5E6013DF45E10061D8DC /* IvyBus.m */; };
+		63FA5E6413DF592A0061D8DC /* AUTHORS in Resources */ = {isa = PBXBuildFile; fileRef = 63FA5E6313DF59250061D8DC /* AUTHORS */; };
+		63FA5E6613DF596F0061D8DC /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 63FA5E6513DF596E0061D8DC /* LICENSE */; };
+		63FA5E6813DF60C40061D8DC /* README in Resources */ = {isa = PBXBuildFile; fileRef = 63FA5E6713DF60C20061D8DC /* README */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,18 +51,56 @@
 		63FA5DC713DEF1860061D8DC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		63FA5DC913DEF1860061D8DC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		63FA5DCB13DEF1860061D8DC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		63FA5DCF13DEF1860061D8DC /* iGCS-Info.plist */ = {isa = PBXFileReference; path = "iGCS-Info.plist"; sourceTree = "<group>"; };
+		63FA5DCF13DEF1860061D8DC /* iGCS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iGCS-Info.plist"; sourceTree = "<group>"; };
 		63FA5DD113DEF1860061D8DC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		63FA5DD313DEF1860061D8DC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		63FA5DD513DEF1860061D8DC /* iGCS-Prefix.pch */ = {isa = PBXFileReference; path = "iGCS-Prefix.pch"; sourceTree = "<group>"; };
-		63FA5DD613DEF1860061D8DC /* iGCSAppDelegate.h */ = {isa = PBXFileReference; path = iGCSAppDelegate.h; sourceTree = "<group>"; };
+		63FA5DD513DEF1860061D8DC /* iGCS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iGCS-Prefix.pch"; sourceTree = "<group>"; };
+		63FA5DD613DEF1860061D8DC /* iGCSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iGCSAppDelegate.h; sourceTree = "<group>"; };
 		63FA5DD713DEF1860061D8DC /* iGCSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iGCSAppDelegate.m; sourceTree = "<group>"; };
-		63FA5DDA13DEF1860061D8DC /* iGCSAppDelegate_iPhone.h */ = {isa = PBXFileReference; name = iGCSAppDelegate_iPhone.h; path = iPhone/iGCSAppDelegate_iPhone.h; sourceTree = "<group>"; };
+		63FA5DDA13DEF1860061D8DC /* iGCSAppDelegate_iPhone.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = iGCSAppDelegate_iPhone.h; path = iPhone/iGCSAppDelegate_iPhone.h; sourceTree = "<group>"; };
 		63FA5DDB13DEF1860061D8DC /* iGCSAppDelegate_iPhone.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = iGCSAppDelegate_iPhone.m; path = iPhone/iGCSAppDelegate_iPhone.m; sourceTree = "<group>"; };
 		63FA5DDE13DEF1860061D8DC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPhone/en.lproj/MainWindow_iPhone.xib; sourceTree = "<group>"; };
-		63FA5DE113DEF1860061D8DC /* iGCSAppDelegate_iPad.h */ = {isa = PBXFileReference; name = iGCSAppDelegate_iPad.h; path = iPad/iGCSAppDelegate_iPad.h; sourceTree = "<group>"; };
+		63FA5DE113DEF1860061D8DC /* iGCSAppDelegate_iPad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = iGCSAppDelegate_iPad.h; path = iPad/iGCSAppDelegate_iPad.h; sourceTree = "<group>"; };
 		63FA5DE213DEF1860061D8DC /* iGCSAppDelegate_iPad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = iGCSAppDelegate_iPad.m; path = iPad/iGCSAppDelegate_iPad.m; sourceTree = "<group>"; };
 		63FA5DE513DEF1860061D8DC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPad/en.lproj/MainWindow_iPad.xib; sourceTree = "<group>"; };
+		63FA5DF013DEF8470061D8DC /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		63FA5DF113DEF8470061D8DC /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		63FA5DF213DEF8470061D8DC /* MapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
+		63FA5DF513DF022F0061D8DC /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		63FA5DF713DF02DD0061D8DC /* UAVMapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UAVMapAnnotation.h; sourceTree = "<group>"; };
+		63FA5DF813DF02DE0061D8DC /* UAVMapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UAVMapAnnotation.m; sourceTree = "<group>"; };
+		63FA5DFB13DF05B60061D8DC /* NSObject+DDExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DDExtensions.m"; sourceTree = "<group>"; };
+		63FA5DFC13DF05B60061D8DC /* NSObject+DDExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DDExtensions.h"; sourceTree = "<group>"; };
+		63FA5DFD13DF05B60061D8DC /* DDInvocationGrabber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDInvocationGrabber.m; sourceTree = "<group>"; };
+		63FA5DFE13DF05B60061D8DC /* DDInvocationGrabber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDInvocationGrabber.h; sourceTree = "<group>"; };
+		63FA5E0113DF05D00061D8DC /* utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utils.h; sourceTree = "<group>"; };
+		63FA5E0213DF05D00061D8DC /* utils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = utils.c; sourceTree = "<group>"; };
+		63FA5E0513DF06060061D8DC /* easystar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = easystar.png; sourceTree = "<group>"; };
+		63FA5E0613DF06060061D8DC /* batt_full.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = batt_full.png; sourceTree = "<group>"; };
+		63FA5E0713DF06060061D8DC /* batt_medium.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = batt_medium.png; sourceTree = "<group>"; };
+		63FA5E0813DF06060061D8DC /* batt_low.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = batt_low.png; sourceTree = "<group>"; };
+		63FA5E0913DF06060061D8DC /* gameplan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gameplan.png; sourceTree = "<group>"; };
+		63FA5E0A13DF06060061D8DC /* airplane.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = airplane.png; sourceTree = "<group>"; };
+		63FA5E0B13DF06060061D8DC /* dashboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dashboard.png; sourceTree = "<group>"; };
+		63FA5E0C13DF06060061D8DC /* radar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radar.png; sourceTree = "<group>"; };
+		63FA5E1513DF0FDB0061D8DC /* ivychannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ivychannel.h; sourceTree = "<group>"; };
+		63FA5E1613DF0FDB0061D8DC /* ivyloop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ivyloop.h; sourceTree = "<group>"; };
+		63FA5E1713DF0FDB0061D8DC /* ivy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ivy.h; sourceTree = "<group>"; };
+		63FA5E1913DF108C0061D8DC /* libivy.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libivy.a; sourceTree = "<group>"; };
+		63FA5E1A13DF108C0061D8DC /* libpcre.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libpcre.a; sourceTree = "<group>"; };
+		63FA5E1D13DF13810061D8DC /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		63FA5E1F13DF25290061D8DC /* StatusViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StatusViewController.xib; sourceTree = "<group>"; };
+		63FA5E2013DF25290061D8DC /* StatusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusViewController.h; sourceTree = "<group>"; };
+		63FA5E2113DF25290061D8DC /* StatusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatusViewController.m; sourceTree = "<group>"; };
+		63FA5E2413DF27D60061D8DC /* easystar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = easystar.png; sourceTree = "<group>"; };
+		63FA5E2613DF2B950061D8DC /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		63FA5E2713DF2B950061D8DC /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		63FA5E5A13DF3DBD0061D8DC /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		63FA5E6013DF45E10061D8DC /* IvyBus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IvyBus.m; sourceTree = "<group>"; };
+		63FA5E6113DF45E20061D8DC /* IvyBus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IvyBus.h; sourceTree = "<group>"; };
+		63FA5E6313DF59250061D8DC /* AUTHORS */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AUTHORS; sourceTree = "<group>"; };
+		63FA5E6513DF596E0061D8DC /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		63FA5E6713DF60C20061D8DC /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,9 +108,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63FA5E1E13DF13810061D8DC /* CoreLocation.framework in Frameworks */,
+				63FA5DF613DF022F0061D8DC /* MapKit.framework in Frameworks */,
 				63FA5DC813DEF1860061D8DC /* UIKit.framework in Frameworks */,
 				63FA5DCA13DEF1860061D8DC /* Foundation.framework in Frameworks */,
 				63FA5DCC13DEF1860061D8DC /* CoreGraphics.framework in Frameworks */,
+				63FA5E1B13DF108C0061D8DC /* libivy.a in Frameworks */,
+				63FA5E1C13DF108C0061D8DC /* libpcre.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +124,10 @@
 		63FA5DB813DEF1860061D8DC = {
 			isa = PBXGroup;
 			children = (
+				63FA5E6713DF60C20061D8DC /* README */,
+				63FA5E6313DF59250061D8DC /* AUTHORS */,
+				63FA5E6513DF596E0061D8DC /* LICENSE */,
+				63FA5E2413DF27D60061D8DC /* easystar.png */,
 				63FA5DCD13DEF1860061D8DC /* iGCS */,
 				63FA5DC613DEF1860061D8DC /* Frameworks */,
 				63FA5DC413DEF1860061D8DC /* Products */,
@@ -72,6 +145,8 @@
 		63FA5DC613DEF1860061D8DC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				63FA5E1D13DF13810061D8DC /* CoreLocation.framework */,
+				63FA5DF513DF022F0061D8DC /* MapKit.framework */,
 				63FA5DC713DEF1860061D8DC /* UIKit.framework */,
 				63FA5DC913DEF1860061D8DC /* Foundation.framework */,
 				63FA5DCB13DEF1860061D8DC /* CoreGraphics.framework */,
@@ -82,11 +157,15 @@
 		63FA5DCD13DEF1860061D8DC /* iGCS */ = {
 			isa = PBXGroup;
 			children = (
+				63FA5E1813DF10790061D8DC /* Resources */,
+				63FA5DFA13DF05910061D8DC /* Other Sources */,
 				63FA5DD613DEF1860061D8DC /* iGCSAppDelegate.h */,
 				63FA5DD713DEF1860061D8DC /* iGCSAppDelegate.m */,
 				63FA5DD913DEF1860061D8DC /* iPhone */,
 				63FA5DE013DEF1860061D8DC /* iPad */,
 				63FA5DCE13DEF1860061D8DC /* Supporting Files */,
+				63FA5DF713DF02DD0061D8DC /* UAVMapAnnotation.h */,
+				63FA5DF813DF02DE0061D8DC /* UAVMapAnnotation.m */,
 			);
 			path = iGCS;
 			sourceTree = "<group>";
@@ -105,9 +184,16 @@
 		63FA5DD913DEF1860061D8DC /* iPhone */ = {
 			isa = PBXGroup;
 			children = (
+				63FA5E0413DF05EA0061D8DC /* Resources */,
+				63FA5E1F13DF25290061D8DC /* StatusViewController.xib */,
+				63FA5E2013DF25290061D8DC /* StatusViewController.h */,
+				63FA5E2113DF25290061D8DC /* StatusViewController.m */,
 				63FA5DDA13DEF1860061D8DC /* iGCSAppDelegate_iPhone.h */,
 				63FA5DDB13DEF1860061D8DC /* iGCSAppDelegate_iPhone.m */,
 				63FA5DDD13DEF1860061D8DC /* MainWindow_iPhone.xib */,
+				63FA5DF113DEF8470061D8DC /* MapViewController.m */,
+				63FA5DF013DEF8470061D8DC /* MapViewController.h */,
+				63FA5DF213DEF8470061D8DC /* MapViewController.xib */,
 			);
 			name = iPhone;
 			sourceTree = "<group>";
@@ -118,8 +204,53 @@
 				63FA5DE113DEF1860061D8DC /* iGCSAppDelegate_iPad.h */,
 				63FA5DE213DEF1860061D8DC /* iGCSAppDelegate_iPad.m */,
 				63FA5DE413DEF1860061D8DC /* MainWindow_iPad.xib */,
+				63FA5E2613DF2B950061D8DC /* MainViewController.h */,
+				63FA5E2713DF2B950061D8DC /* MainViewController.m */,
+				63FA5E5A13DF3DBD0061D8DC /* MainViewController.xib */,
 			);
 			name = iPad;
+			sourceTree = "<group>";
+		};
+		63FA5DFA13DF05910061D8DC /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				63FA5E1513DF0FDB0061D8DC /* ivychannel.h */,
+				63FA5E1613DF0FDB0061D8DC /* ivyloop.h */,
+				63FA5E1713DF0FDB0061D8DC /* ivy.h */,
+				63FA5E0113DF05D00061D8DC /* utils.h */,
+				63FA5E0213DF05D00061D8DC /* utils.c */,
+				63FA5E6013DF45E10061D8DC /* IvyBus.m */,
+				63FA5E6113DF45E20061D8DC /* IvyBus.h */,
+				63FA5DFB13DF05B60061D8DC /* NSObject+DDExtensions.m */,
+				63FA5DFC13DF05B60061D8DC /* NSObject+DDExtensions.h */,
+				63FA5DFD13DF05B60061D8DC /* DDInvocationGrabber.m */,
+				63FA5DFE13DF05B60061D8DC /* DDInvocationGrabber.h */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		63FA5E0413DF05EA0061D8DC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				63FA5E0613DF06060061D8DC /* batt_full.png */,
+				63FA5E0713DF06060061D8DC /* batt_medium.png */,
+				63FA5E0813DF06060061D8DC /* batt_low.png */,
+				63FA5E0913DF06060061D8DC /* gameplan.png */,
+				63FA5E0B13DF06060061D8DC /* dashboard.png */,
+				63FA5E0C13DF06060061D8DC /* radar.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		63FA5E1813DF10790061D8DC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				63FA5E0513DF06060061D8DC /* easystar.png */,
+				63FA5E0A13DF06060061D8DC /* airplane.png */,
+				63FA5E1913DF108C0061D8DC /* libivy.a */,
+				63FA5E1A13DF108C0061D8DC /* libpcre.a */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,6 +303,21 @@
 				63FA5DD213DEF1860061D8DC /* InfoPlist.strings in Resources */,
 				63FA5DDF13DEF1860061D8DC /* MainWindow_iPhone.xib in Resources */,
 				63FA5DE613DEF1860061D8DC /* MainWindow_iPad.xib in Resources */,
+				63FA5DF413DEF8480061D8DC /* MapViewController.xib in Resources */,
+				63FA5E0D13DF06060061D8DC /* easystar.png in Resources */,
+				63FA5E0E13DF06060061D8DC /* batt_full.png in Resources */,
+				63FA5E0F13DF06060061D8DC /* batt_medium.png in Resources */,
+				63FA5E1013DF06060061D8DC /* batt_low.png in Resources */,
+				63FA5E1113DF06060061D8DC /* gameplan.png in Resources */,
+				63FA5E1213DF06060061D8DC /* airplane.png in Resources */,
+				63FA5E1313DF06060061D8DC /* dashboard.png in Resources */,
+				63FA5E1413DF06060061D8DC /* radar.png in Resources */,
+				63FA5E2213DF252A0061D8DC /* StatusViewController.xib in Resources */,
+				63FA5E2513DF27D60061D8DC /* easystar.png in Resources */,
+				63FA5E5B13DF3DBD0061D8DC /* MainViewController.xib in Resources */,
+				63FA5E6413DF592A0061D8DC /* AUTHORS in Resources */,
+				63FA5E6613DF596F0061D8DC /* LICENSE in Resources */,
+				63FA5E6813DF60C40061D8DC /* README in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,6 +332,14 @@
 				63FA5DD813DEF1860061D8DC /* iGCSAppDelegate.m in Sources */,
 				63FA5DDC13DEF1860061D8DC /* iGCSAppDelegate_iPhone.m in Sources */,
 				63FA5DE313DEF1860061D8DC /* iGCSAppDelegate_iPad.m in Sources */,
+				63FA5DF313DEF8480061D8DC /* MapViewController.m in Sources */,
+				63FA5DF913DF02DE0061D8DC /* UAVMapAnnotation.m in Sources */,
+				63FA5DFF13DF05B60061D8DC /* NSObject+DDExtensions.m in Sources */,
+				63FA5E0013DF05B60061D8DC /* DDInvocationGrabber.m in Sources */,
+				63FA5E0313DF05D00061D8DC /* utils.c in Sources */,
+				63FA5E2313DF252A0061D8DC /* StatusViewController.m in Sources */,
+				63FA5E2813DF2B950061D8DC /* MainViewController.m in Sources */,
+				63FA5E6213DF45E20061D8DC /* IvyBus.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +424,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iGCS/iGCS-Prefix.pch";
 				INFOPLIST_FILE = "iGCS/iGCS-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/iGCS\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -281,6 +439,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iGCS/iGCS-Prefix.pch";
 				INFOPLIST_FILE = "iGCS/iGCS-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/iGCS\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

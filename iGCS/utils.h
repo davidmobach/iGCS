@@ -19,19 +19,8 @@
  * https://github.com/davidmobach/iGCS
  */
 
-#import "iGCSAppDelegate_iPhone.h"
+//const double FOURTHPI = 3.14159265 / 4;
+//const double deg2rad = 3.14159265 / 180;
+const double rad2deg = 180.0 / 3.14159265;
 
-@implementation iGCSAppDelegate_iPhone
-
-@synthesize tabBarController;
-@synthesize window = _window;
-
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions { 
-    
-    [_window addSubview:tabBarController.view];
-    
-    //return YES;
-    return [super application:application didFinishLaunchingWithOptions:launchOptions];
-}
-
-@end
+void UTMtoLL(double UTMNorthing, double UTMEasting, char* UTMZone, double *Lat,  double *Long );

@@ -1,0 +1,17 @@
+This application is a first attempt at creating an iOS-based application
+that implements some of the Ground Control Station functionality of
+the existing Paparazzi GCS.
+
+The app connects to the same Ivy-bus that all the ground based Paparazzi
+UAV software connects to. This means that the iOS device needs some kind
+of network connection to the Paparazzi GCS, either via bluetooth, wifi, or
+cable.
+
+The app is implemented as a 'universal' app, meaning that it can run on both
+iPads and iPhones.
+
+In its current form, it is purely intended as a prototype, and should be used
+in that way. Any feedback or offers to contribute to further develop this app
+are highly appreciated!
+
+- David Mobach

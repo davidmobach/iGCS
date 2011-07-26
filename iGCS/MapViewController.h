@@ -19,19 +19,23 @@
  * https://github.com/davidmobach/iGCS
  */
 
-#import "iGCSAppDelegate_iPhone.h"
+#import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
+#import "UAVMapAnnotation.h"
 
-@implementation iGCSAppDelegate_iPhone
+void *refToMapViewController;
 
-@synthesize tabBarController;
-@synthesize window = _window;
-
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions { 
-    
-    [_window addSubview:tabBarController.view];
-    
-    //return YES;
-    return [super application:application didFinishLaunchingWithOptions:launchOptions];
+@interface MapViewController : UIViewController <MKMapViewDelegate> {
+	IBOutlet MKMapView *mapView;
+	UAVMapAnnotation *UAV_annotation;
 }
+
+@property (nonatomic, retain) MKMapView *mapView;
+@property (nonatomic, retain) UAVMapAnnotation *UAV_annotation;
+
+
+- (void) updateGPS: (char **) latlon;
+
+
 
 @end

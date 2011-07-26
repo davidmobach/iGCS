@@ -19,19 +19,17 @@
  * https://github.com/davidmobach/iGCS
  */
 
-#import "iGCSAppDelegate_iPhone.h"
+#import <Foundation/Foundation.h>
+#import <MapKit/MapKit.h>
 
-@implementation iGCSAppDelegate_iPhone
-
-@synthesize tabBarController;
-@synthesize window = _window;
-
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions { 
-    
-    [_window addSubview:tabBarController.view];
-    
-    //return YES;
-    return [super application:application didFinishLaunchingWithOptions:launchOptions];
+@interface UAVMapAnnotation : NSObject <MKAnnotation> {
+	UIImage *image;
+	CLLocationCoordinate2D _coordinate;
 }
+
+- (id)initWithCoordinate:(CLLocationCoordinate2D)coordinate;
+
+@property (nonatomic, retain) UIImage *image;
+@property (nonatomic, readwrite) CLLocationCoordinate2D coordinate;
 
 @end
