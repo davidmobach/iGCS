@@ -14,4 +14,11 @@ In its current form, it is purely intended as a prototype, and should be used
 in that way. Any feedback or offers to contribute to further develop this app
 are highly appreciated!
 
-- David Mobach
+How to run:
+The easiest way to run this software is by opening it in Xcode (I use v4), and
+running it in the iPad/iPhone simulator. By default, the app assumes that the
+network it should be listening on is [192.168.1]. You can change this through
+the 'settings' menu of the iOS device.
+
+Have fun!
+  -David
