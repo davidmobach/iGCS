@@ -8,7 +8,8 @@ of network connection to the Paparazzi GCS, either via bluetooth, wifi, or
 cable.
 
 The app is implemented as a 'universal' app, meaning that it can run on both
-iPads and iPhones.
+iPads and iPhones. It uses a number of standard frameworks (e.g. MapKit, UIKit)
+to display a flight map and some UAV status information.
 
 In its current form, it is purely intended as a prototype, and should be used
 in that way. Any feedback or offers to contribute to further develop this app
