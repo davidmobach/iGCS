@@ -10,7 +10,7 @@ Building pcre:
 Building ivy:
 1. get the ivy-c source:http://svn.tls.cena.fr/svn/ivy/ivy-c/trunk/
 2. Use the Makefile.arm and Makefile.armsim files supplied in this directory
-3. Update the SDK-version in the Makefiles
+3. Update the SDK-version in the Makefiles, and set the correct (arm) arch in CFLAGS
 4. make -f Makefile.arm static-libs
 5. mv libivy-iphone.a /tmp
 6. make -f Makefile.armsim clean
