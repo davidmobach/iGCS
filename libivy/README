@@ -1,0 +1,20 @@
+iGCS requires libivy to communicate with the Paparazzi GCS. Here are the steps
+I used to compile libivy for iOS and the IOS simulator environment.
+
+Building pcre:
+1. Get the pcre source: http://sourceforge.net/projects/pcre/files/pcre/
+2. Get the build script from this guy: https://github.com/shigeyas/build-pcre-iphone
+3. Update the SDK_VERSION in the script to your target iOS version
+4. Execute the build script
+
+Building ivy:
+1. get the ivy-c source:http://svn.tls.cena.fr/svn/ivy/ivy-c/trunk/
+2. Use the Makefile.arm and Makefile.armsim files supplied in this directory
+3. Update the SDK-version in the Makefiles
+4. make -f Makefile.arm static-libs
+5. mv libivy-iphone.a /tmp
+6. make -f Makefile.armsim clean
+7. make -f Makefile.armsim static-libs
+8. mv libivy-simulator.a /tmp
+9. cd /tmp
+10. lipo -create libivy-iphone.a libivy-simulator.a -output libivy.a

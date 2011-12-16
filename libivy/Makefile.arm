@@ -1,0 +1,138 @@
+PERHAPS64 := $(shell uname -m | perl -ne "print /64/ ? '64' : '';")
+LIB = /lib$(PERHAPS64)
+ifeq ($(PERHAPS64), "64")
+	FPIC=
+else
+	FPIC=-fPIC
+endif
+
+ifndef PREFIX
+    PREFIX=/opt/rosx
+endif
+
+PCREINC = `pcre-config --cflags`
+PCRELIB = `pcre-config --libs`
+CASESENSITIVE = "yes"
+ifeq ($(CASESENSITIVE), "no")
+	PCRE_OPT=PCRE_CASELESS
+	REGCOMP_OPT=REG_ICASE
+else
+	PCRE_OPT=0
+	REGCOMP_OPT=REG_EXTENDED	
+endif
+REGEXP= -DUSE_PCRE_REGEX -DPCRE_OPT=$(PCRE_OPT)
+
+OBJ = ivyloop.o timer.o ivysocket.o ivy.o ivybuffer.o ivyfifo.o ivybind.o intervalRegexp.o param.o
+OMPOBJ = ivyloop.o timer.o ivysocket_omp.o ivy_omp.o ivybuffer.o ivyfifo.o ivybind.o intervalRegexp.o param.o
+
+TOOLS_DIR = ../tools
+
+# you should first install gcc version >= 4.3
+# gcc (g++) 4.3 is the first gcc version which support openmp under macosx 
+# using macport greatly simplify gcc install : port install gcc44
+OMPCC = gcc-mp-4.4  
+OMPCPP =  g++-mp-4.4
+OMPLIBTOOL =ar q
+OMPCFLAGS = -g -Wall $(FPIC) -fopenmp -DOPENMP=1
+OMPLIB = -lgomp -lpthread
+
+DEVROOT=/Developer/Platforms/iPhoneOS.platform/Developer
+#SDKROOT=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.3.sdk
+SDKROOT=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk
+
+CPPFLAGS=-I$(SDKROOT)/usr/lib/gcc/arm-apple-darwin10/4.0.1/include -I$(SDKROOT)/usr/include/ -I./
+CFLAGS=$(CPPFLAGS) -g -Wall -Wshadow $(FPIC) -arch armv7 -pipe -no-cpp-precomp -isysroot $(SDKROOT)
+CPP=$(DEVROOT)/usr/bin/gcc $(CPPFLAGS)
+
+
+LIBTOOL=ar q # linux and solaris
+#CFLAGS = -g -Wall $(FPIC)
+
+
+
+#CC=gcc
+#CPP=g++
+CC = $(CPP)
+#CPP = $(OMPCPP)
+LIBTOOL = $(OMPLIBTOOL)
+#CFLAGS = -g -Wall -Wshadow $(FPIC)
+
+# ------------------------------------------------------------------------------------------
+
+.c.o:
+	$(CC) $(CFLAGS) -c $*.c
+
+.cpp.o:
+	$(CPP) $(CFLAGS)  -c $*.cpp
+
+
+all: static-libs tools # shared-libs 
+libomp: libivy_omp.a 
+
+omp: libomp
+	@(cd $(TOOLS_DIR) && $(MAKE) -f Makefile.osx omp) 
+
+static-libs: libivy-iphone.a
+
+shared-libs: libivy.dylib
+
+ivybind.o: ivybind.c
+	$(CC) -c $(CFLAGS) $(REGEXP) ivybind.c
+
+ivy_omp.o: ivy.c
+	$(OMPCC) -c $(OMPCFLAGS)  -o ivy_omp.o ivy.c
+
+ivysocket_omp.o: ivysocket.c
+	$(OMPCC) -c $(OMPCFLAGS)  -o ivysocket_omp.o ivysocket.c
+
+
+libivy-iphone.a: $(OBJ)
+	rm -f $@
+	$(LIBTOOL) $@ $(OBJ)
+
+libivy_omp.a: $(OMPOBJ)
+	rm -f $@
+	$(LIBTOOL) $@ $(OMPOBJ)
+
+libivy.dylib: $(OBJ)
+	$(CC) -dynamiclib -o $@ $(OBJ) $(PCRELIB)
+
+libivy_omp.dylib: $(OMPOBJ)
+	$(OMPCC) -dynamiclib -o $@ $(OMPOBJ) $(PCRELIB) $(OMPLIB) 
+
+# ------------------------------------------------------------------------------------------
+
+installlibs: static-libs shared-libs
+	test -d $(DESTDIR)$(PREFIX)$(LIB)  || mkdir -p $(DESTDIR)$(PREFIX)$(LIB)
+	install -m644 libivy.a		$(DESTDIR)$(PREFIX)$(LIB)
+	install -m644 libivy.dylib	$(DESTDIR)$(PREFIX)$(LIB)
+	@(cd $(TOOLS_DIR) && $(MAKE) -f Makefile.osx install)
+
+includes:
+	test -d $(DESTDIR)$(PREFIX)/include/Ivy || mkdir -p $(DESTDIR)$(PREFIX)/include/Ivy
+	install -m644 ivy.h			$(DESTDIR)$(PREFIX)/include/Ivy/
+	install -m644 ivybind.h		$(DESTDIR)$(PREFIX)/include/Ivy/
+	install -m644 ivybuffer.h	$(DESTDIR)$(PREFIX)/include/Ivy/
+	install -m644 ivychannel.h	$(DESTDIR)$(PREFIX)/include/Ivy/
+	install -m644 ivydebug.h	$(DESTDIR)$(PREFIX)/include/Ivy/
+	install -m644 ivyloop.h		$(DESTDIR)$(PREFIX)/include/Ivy/
+	install -m644 ivysocket.h	$(DESTDIR)$(PREFIX)/include/Ivy/
+	install -m644 list.h		$(DESTDIR)$(PREFIX)/include/Ivy/
+	install -m644 timer.h		$(DESTDIR)$(PREFIX)/include/Ivy/
+	install -m644 version.h		$(DESTDIR)$(PREFIX)/include/Ivy/
+
+installbins: commands
+	test -d $(DESTDIR)$(PREFIX)/bin || mkdir -p $(DESTDIR)$(PREFIX)/bin
+	install -m755 ivyprobe $(DESTDIR)$(PREFIX)/bin
+	install -m755 ivyperf $(DESTDIR)$(PREFIX)/bin
+
+tools: static-libs 
+	@(cd $(TOOLS_DIR) && $(MAKE) -f Makefile.osx)
+
+install: installlibs installbins includes
+
+# ------------------------------------------------------------------------------------------
+
+clean:
+	-rm -f  *.o *.a *.dylib *.dylib.* *~
+	@(cd $(TOOLS_DIR) && $(MAKE) -f Makefile.osx clean)
